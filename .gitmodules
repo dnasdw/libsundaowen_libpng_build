@@ -1,0 +1,6 @@
+[submodule "target"]
+	path = target
+	url = https://github.com/dnasdw/libsundaowen_libpng.git
+[submodule "zlib"]
+	path = zlib
+	url = https://github.com/dnasdw/libsundaowen_zlib.git
