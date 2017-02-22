@@ -6,8 +6,8 @@ IF NOT DEFINED GENERATOR (
   ECHO Can not find VC2015 installed!
   GOTO ERROR
 )
-SET rootdir=%~dp0
 SET cwdir=%CD%
+SET rootdir=%~dp0
 SET target=windows_x86_64
 SET prefix=%rootdir%%target%
 SET /P version=<"%rootdir%version.txt"

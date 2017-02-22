@@ -12,8 +12,8 @@ IF NOT DEFINED GENERATOR (
   ECHO Can not find VC2008 or VC2010 or VC2012 or VC2013 installed!
   GOTO ERROR
 )
-SET rootdir=%~dp0
 SET cwdir=%CD%
+SET rootdir=%~dp0
 SET target=windows_x86_64
 SET prefix=%rootdir%%target%
 SET /P version=<"%rootdir%version.txt"

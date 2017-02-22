@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cwdir=`pwd`
-rootdir=`dirname $0`
+rootdir=`dirname "$0"`
 cd "$rootdir"
 rootdir=`pwd`
 target=linux_x86_64
