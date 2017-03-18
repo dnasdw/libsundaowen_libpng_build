@@ -24,7 +24,6 @@ RD /S /Q "%rootdir%project"
 MD "%rootdir%project"
 CD /D "%rootdir%project"
 cmake -C "%rootdir%CMakeLists.txt" -DPNG_SHARED=OFF -DPNG_TESTS=OFF -DZLIB_INCLUDE_DIR="%rootdir%..\zlib\include\%target%" -DZLIB_LIBRARY="%rootdir%..\zlib\lib\%target%%target_lib_suffix%\zlibstatic.lib" -DCMAKE_INSTALL_PREFIX="%prefix%" -G %GENERATOR% "%rootdir%%version%"
-cmake "%rootdir%%version%"
 cmake --build . --target install --config Release --clean-first
 RD /S /Q "%prefix%\include\libpng16"
 MD "%rootdir%..\target\include\%target%"
